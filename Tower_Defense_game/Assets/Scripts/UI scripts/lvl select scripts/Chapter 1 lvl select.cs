@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class Chapter1_lvlselect : MonoBehaviour
 {
     //Load Scene
-    public void Play_Button()
+    public void Chapter_levelselect()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
