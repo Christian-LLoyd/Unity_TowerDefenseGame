@@ -10,11 +10,4 @@ public class Chapter1_intro : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
-
-    //Quit Game
-    public void Exit_Button()
-    {
-        Application.Quit();
-        Debug.Log("The Player has Quit the game");
-    }
 }
