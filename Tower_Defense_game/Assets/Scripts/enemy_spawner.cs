@@ -5,8 +5,8 @@ public class enemy_spawner : MonoBehaviour
     [Header("Spawner Settings")]
     public GameObject[] enemyPrefabs; // Array of enemy prefabs
     public Vector2 spawnAreaSize = new Vector2(10f, 10f); // Define spawn area size
-    public float spawnInterval = 15f; // Time between spawns
-    public int maxEnemies = 2; // Maximum number of enemies at a time
+    public float spawnInterval = 10f; // Time between spawns
+    public int maxEnemies = 8; // Maximum number of enemies at a time
 
     private float timer;
     private int currentEnemyCount;
