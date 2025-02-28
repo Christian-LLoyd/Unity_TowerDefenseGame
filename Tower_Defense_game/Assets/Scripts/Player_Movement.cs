@@ -2,35 +2,51 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 3f;  // Adjusted speed for smoother movement
-    public float rotationSpeed = 10f; 
+    public float moveSpeed = 3f;
+    public float rotationSpeed = 10f;
 
     private Rigidbody rb;
+    public Player_Bullet gun;
     private Vector3 moveDirection;
-    private Animator animator; // Animator reference
+    private Animator animator;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        animator = GetComponent<Animator>(); // Get Animator component
+        animator = GetComponent<Animator>();
 
-        if (rb == null) Debug.LogError("Rigidbody is missing on " + gameObject.name);
-        if (animator == null) Debug.LogError("Animator is missing on " + gameObject.name);
+        if (!rb) Debug.LogError("Rigidbody is missing on " + gameObject.name);
+        if (!animator) Debug.LogError("Animator is missing on " + gameObject.name);
 
-        rb.freezeRotation = true; 
-        rb.isKinematic = false; 
-        rb.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic; 
-        rb.interpolation = RigidbodyInterpolation.Interpolate; 
-        
-        // Prevents physics from making the player move on its own
-        rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionY;
+        rb.freezeRotation = true;
+        rb.isKinematic = false;
+        rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
+        rb.interpolation = RigidbodyInterpolation.Interpolate;
+
+        rb.constraints = RigidbodyConstraints.FreezeRotationX | 
+                         RigidbodyConstraints.FreezeRotationZ | 
+                         RigidbodyConstraints.FreezePositionY;
     }
 
     void Update()
+{
+    HandleMovementInput();
+    HandleAnimations();
+
+    if (Input.GetButtonDown("Shoot"))
     {
-        HandleMovementInput();
-        HandleAnimations(); // Updates Idle & Walk animations
+        Debug.Log("Shoot button pressed!"); // ✅ Debugging: Check if input is detected
+        if (gun != null)
+        {
+            gun.Shoot();
+        }
+        else
+        {
+            Debug.LogError("Gun reference is missing in PlayerMovement!");
+        }
     }
+}
+
 
     void FixedUpdate()
     {
@@ -43,16 +59,7 @@ public class PlayerMovement : MonoBehaviour
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveZ = Input.GetAxisRaw("Vertical");
 
-        moveDirection = new Vector3(-moveZ, 0, moveX);
-
-        if (moveDirection.sqrMagnitude < 0.01f) // Ensures zero movement is properly detected
-        {
-            moveDirection = Vector3.zero;
-        }
-        else
-        {
-            moveDirection.Normalize();
-        }
+        moveDirection = new Vector3(-moveZ, 0, moveX).normalized;
     }
 
     void MovePlayer()
@@ -63,8 +70,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            // Smooth stopping to prevent sudden snapping or sliding
-            rb.linearVelocity = Vector3.Lerp(rb.linearVelocity, Vector3.zero, Time.fixedDeltaTime * 10f);
+            rb.linearVelocity = Vector3.zero; // Ensures instant stopping
         }
     }
 
@@ -73,13 +79,13 @@ public class PlayerMovement : MonoBehaviour
         if (moveDirection != Vector3.zero)
         {
             Quaternion targetRotation = Quaternion.LookRotation(moveDirection, Vector3.up);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.fixedDeltaTime);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
         }
     }
 
     void HandleAnimations()
     {
-        bool isMoving = moveDirection.sqrMagnitude > 0.01f; // Prevents floating-point errors
+        bool isMoving = moveDirection.sqrMagnitude > 0.01f;
         animator.SetBool("isWalking", isMoving);
     }
 }
