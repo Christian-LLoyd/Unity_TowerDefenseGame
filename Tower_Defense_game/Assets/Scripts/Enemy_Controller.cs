@@ -6,32 +6,58 @@ public class Enemy_Controller : MonoBehaviour
     public Transform target;
     public int health = 150;
     public float stopDistance = 2f; // Distance at which enemy stops moving
+    public float timeBetweenAttacks, perAttack;
+    public float attackCounter;
+    public float DamageToTake = 10f; // Adjust this damage value as needed
 
     private Rigidbody rb;
+    private Target_Castle TheCastle;
+    
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
 
-        if (!rb)
+         if (!rb)
+         {
+             Debug.LogError("Rigidbody missing on " + gameObject.name);
+         }
+
+         // ✅ Ensure proper Rigidbody settings
+         rb.freezeRotation = true;
+         rb.isKinematic = false;
+         rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
+         rb.interpolation = RigidbodyInterpolation.Interpolate;
+         rb.constraints = RigidbodyConstraints.FreezeRotationX | 
+                          RigidbodyConstraints.FreezeRotationZ | 
+                        RigidbodyConstraints.FreezePositionY;
+
+
+        attackCounter = timeBetweenAttacks = 5f;
+        TheCastle = FindObjectOfType<Target_Castle>(); 
+
+        if (TheCastle == null)
         {
-            Debug.LogError("Rigidbody missing on " + gameObject.name);
+            Debug.LogError("⚠️ TheCastle is NULL! Make sure the Target_Castle script is on the correct GameObject.");
         }
 
-        // ✅ Ensure proper Rigidbody settings
-        rb.freezeRotation = true;
-        rb.isKinematic = false;
-        rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
-        rb.interpolation = RigidbodyInterpolation.Interpolate;
-        rb.constraints = RigidbodyConstraints.FreezeRotationX | 
-                         RigidbodyConstraints.FreezeRotationZ | 
-                         RigidbodyConstraints.FreezePositionY;
+
     }
 
     void Update()
     {
         MoveTowardsTarget();
+        attackCounter -= Time.deltaTime;
+
+        if (attackCounter <= 0 && TheCastle != null && Vector3.Distance(transform.position, target.position) <= stopDistance)
+        {
+            attackCounter = timeBetweenAttacks; // ✅ Reset the attack cooldown
+            TheCastle.Apply_Damage(DamageToTake);
+            Debug.Log("⚔️ Enemy attacked the castle! Distance: " + Vector3.Distance(transform.position, target.position));
+        }
+
     }
+
 
     void MoveTowardsTarget()
     {
@@ -41,13 +67,13 @@ public class Enemy_Controller : MonoBehaviour
 
         if (distance > stopDistance)
         {
-            // ✅ Move enemy toward player
+            
             Vector3 direction = (target.position - transform.position).normalized;
-            direction.y = 0; // Prevents enemy from floating
+            direction.y = 0; 
 
             rb.linearVelocity = direction * moveSpeed;
 
-            // ✅ Rotate enemy to face player
+          
             if (direction != Vector3.zero)
             {
                 Quaternion targetRotation = Quaternion.LookRotation(direction);
@@ -62,7 +88,7 @@ public class Enemy_Controller : MonoBehaviour
 
     public void DamageEnemy(int damage)
     {
-        if (this == null) return; // ✅ Prevents error if enemy is already destroyed
+        if (this == null) return; 
 
         health -= damage;
         Debug.Log(gameObject.name + " took damage! Remaining HP: " + health);
@@ -74,8 +100,8 @@ public class Enemy_Controller : MonoBehaviour
         }
     }
 
-
-    // ✅ Debug: Triggered when enemy enters the player's collider
+    //debug for enemy close to the player
+ 
    private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))

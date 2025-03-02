@@ -62,17 +62,19 @@ public class PlayerMovement : MonoBehaviour
         moveDirection = new Vector3(-moveZ, 0, moveX).normalized;
     }
 
-    void MovePlayer()
+  void MovePlayer()
     {
-        if (moveDirection != Vector3.zero)
+        if (moveDirection.sqrMagnitude > 0.01f)
         {
-            rb.linearVelocity = new Vector3(moveDirection.x * moveSpeed, rb.linearVelocity.y, moveDirection.z * moveSpeed);
+            Vector3 targetVelocity = moveDirection * moveSpeed;
+            rb.linearVelocity = new Vector3(targetVelocity.x, rb.linearVelocity.y, targetVelocity.z);
         }
         else
         {
-            rb.linearVelocity = Vector3.zero; // Ensures instant stopping
+            rb.linearVelocity = new Vector3(0, rb.linearVelocity.y, 0);
         }
     }
+
 
     void RotatePlayer()
     {
@@ -87,5 +89,6 @@ public class PlayerMovement : MonoBehaviour
     {
         bool isMoving = moveDirection.sqrMagnitude > 0.01f;
         animator.SetBool("isWalking", isMoving);
+        
     }
 }
