@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Chapter_select.unity
     guid: 67b57561684aee543827fdf7b50e1aa5
   - enabled: 1
-    path: Assets/Scenes/Chapter_1/Chapter1_intro.unity
+    path: Assets/Scenes/Chapter_1/Lvl_1-Intro.unity
     guid: d6d8867a7be77724393e93976d2028df
   - enabled: 1
     path: Assets/Scenes/Chapter_1/Chapter1_Level_select.unity
