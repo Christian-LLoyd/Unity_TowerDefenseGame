@@ -5,7 +5,7 @@ public class TreeTransparency : MonoBehaviour
     private Renderer treeRenderer;
     private Color originalColor;
     public float fadeAmount = 0.3f; // Transparency when hiding
-    public float detectRadius = 2f; // Adjust if needed
+    public float detectRadius = 2f; // Detection range for the player
 
     void Start()
     {
@@ -47,12 +47,13 @@ public class TreeTransparency : MonoBehaviour
     {
         if (treeRenderer != null)
         {
-            Color newColor = originalColor;
-            newColor.a = alpha;
+            Color newColor = treeRenderer.material.color;
+            newColor.a = Mathf.Lerp(newColor.a, alpha, Time.deltaTime * 5f); // Smooth transition
             treeRenderer.material.color = newColor;
         }
     }
-     // ✅ Draw Gizmos in the Scene view to visualize the detection radius
+
+    // ✅ Draw Gizmos in the Scene view to visualize the detection radius
     void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow; // Set Gizmo color

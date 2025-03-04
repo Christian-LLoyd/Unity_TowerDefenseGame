@@ -12,7 +12,7 @@ public class Enemy_Controller : MonoBehaviour
 
     private Rigidbody rb;
     private Target_Castle TheCastle;
-    
+    //testttt
 
     void Start()
     {
@@ -63,7 +63,7 @@ public class Enemy_Controller : MonoBehaviour
     {
         if (target == null) return;
 
-        float distance = Vector3.Distance(transform.position, target.position);
+        float distance = Vector3.Distance(transform.position, target.position); 
 
         if (distance > stopDistance)
         {

@@ -23,10 +23,10 @@ public class HealthManager : MonoBehaviour
             TakeDamage(10);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Heal(5);
-        }
+        // if (Input.GetKeyDown(KeyCode.Space))
+        // {
+        //     Heal(5);
+        // }
     }
 
     public void TakeDamage(float damage)
