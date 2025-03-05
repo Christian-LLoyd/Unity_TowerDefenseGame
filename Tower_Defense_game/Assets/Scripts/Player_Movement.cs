@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
 
     // Dash Variables
-    public float dashDistance = 5f; // ✅ Fixed distance dash
+    public float dashDistance = 5f; // Fixed distance dash
     public float dashCooldown = 1f;
     private bool isDashing;
     private float dashCooldownTimer;
@@ -112,29 +112,72 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void StartDash()
-    {   Debug.Log("the start() called lmaio");
+    {
+        Debug.Log("Dash Started!");
         animator.SetTrigger("isDashing");
-        // Debug.Log(" Dash Activated!");
         isDashing = true;
-        dashTarget = transform.position + transform.forward * dashDistance; // Moves forward a fixed distance
+
+        Vector3 dashDirection = transform.forward;
+        float intendedDashDistance = dashDistance;
+
+        // Raycast to check for trees
+        RaycastHit hit;
+        bool obstacleDetected = Physics.Raycast(
+            transform.position,
+            dashDirection,
+            out hit,
+            dashDistance,
+            LayerMask.GetMask("Tree")
+        );
+
+        // Adjust dash distance if a tree is detected
+        if (obstacleDetected)
+        {
+            float buffer = 0.5f; // Prevents clipping into the tree
+            intendedDashDistance = Mathf.Max(0, hit.distance - buffer);
+        }
+
+        dashTarget = transform.position + dashDirection * intendedDashDistance;
     }
 
     void DashForward()
     {
-        // ✅ Move towards dash target
-        rb.MovePosition(Vector3.MoveTowards(transform.position, dashTarget, moveSpeed * 10f * Time.fixedDeltaTime));
+        // Move toward the dash target
+        rb.MovePosition(Vector3.MoveTowards(
+            transform.position,
+            dashTarget,
+            moveSpeed * 10f * Time.fixedDeltaTime
+        ));
 
-        
+        // End the dash when the target is reached
         if (Vector3.Distance(transform.position, dashTarget) < 0.1f)
         {
-            Debug.Log("🛑 Dash Ended!");
+            Debug.Log("Dash Ended!");
             isDashing = false;
             dashCooldownTimer = dashCooldown;
         }
     }
 
-    void OnCollisionEnter(Collision collision)
+   void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("🔥 Player Collided with: " + collision.gameObject.name);
+        Debug.Log("Player Collided with: " + collision.gameObject.name);
+
+        if (collision.gameObject.CompareTag("Tree"))
+        {
+            // Stop dashing if the player is currently dashing
+            if (isDashing)
+            {
+                isDashing = false;
+                dashCooldownTimer = dashCooldown;
+            }
+
+            // Push the player out of the trunk, but reduce the force during dash
+            Vector3 collisionNormal = collision.contacts[0].normal;
+            Vector3 pushbackPosition = transform.position + collisionNormal * 0.2f; // Reduced pushback distance
+            rb.MovePosition(pushbackPosition);
+
+            // Optional: Add a smaller force to push the player away
+            rb.AddForce(collisionNormal * 2f, ForceMode.Impulse); // Reduced force
+        }
     }
 }
