@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Chapter_3intro: MonoBehaviour
+public class lvl1CH3Intro : MonoBehaviour
 {
     //Load Scene
-    public void Chapter_3_intro()
+    public void ContinueButton()
     {
-        SceneManager.LoadScene("Chapter3_Level_select");
+        SceneManager.LoadScene("Lvl_1-CH3-Intro");
     }
 }

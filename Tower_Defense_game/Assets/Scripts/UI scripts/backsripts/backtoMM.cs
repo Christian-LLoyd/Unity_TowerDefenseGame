@@ -8,7 +8,7 @@ public class BacktoMM : MonoBehaviour
     //Load Scene
     public void Back_MM()
     {
-        SceneManager.LoadScene("Main_Menu");
+        SceneManager.LoadScene("MainMenu");
     }
 
     //Quit Game
