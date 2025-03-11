@@ -17,7 +17,7 @@ public class LevelComplete : MonoBehaviour
     public void Next_Level()
     {
                 
-        SceneManager.LoadScene("Lvl_2");
+        SceneManager.LoadScene("Lvl_2-Intro");
 
     }
 
