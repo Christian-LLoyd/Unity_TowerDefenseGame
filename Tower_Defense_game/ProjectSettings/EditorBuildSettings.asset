@@ -32,22 +32,31 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Chapter_1/Levels/Lvl_3.unity
     guid: a1e6d23d5b11cea42806e1fd6d10e455
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Chapter_2/Chapter2_intro.unity
     guid: e32a8c30ba158c944ba2620e886580b4
   - enabled: 1
     path: Assets/Scenes/Chapter_2/Chapter2_Level_select.unity
     guid: bc3fbc5154ff2274b969177ccd4bd758
   - enabled: 1
+    path: Assets/Scenes/Chapter_2/Lvl_1-CH2-Intro.unity
+    guid: aa384100c32ceb24a9423adf5f43f8c7
+  - enabled: 1
     path: Assets/Scenes/Chapter_2/Levels/Lvl_1_CH2.unity
     guid: 20dc4805a6380f4488778b1eb8e00cc9
   - enabled: 1
+    path: Assets/Scenes/Chapter_2/Lvl_2-CH2-Intro.unity
+    guid: 84334828b0597d044b445cc7fea8f309
+  - enabled: 1
     path: Assets/Scenes/Chapter_2/Levels/Lvl_2_CH2.unity
-    guid: b80857c50957634479b8573bb049a1de
+    guid: feef3eeaccb70df4a930fa5e05a4dea4
+  - enabled: 1
+    path: Assets/Scenes/Chapter_2/Lvl_3-CH2-Intro.unity
+    guid: 0e881ffe80eece5439a9d7f53039313f
   - enabled: 1
     path: Assets/Scenes/Chapter_2/Levels/Lvl_3_CH2.unity
-    guid: 1b673d66b25ec104ead9d491fb4a7d68
-  - enabled: 1
+    guid: 04aeb882cd06a894dbb1df8bb232bb57
+  - enabled: 0
     path: Assets/Scenes/Chapter_3/Chapter3_intro.unity
     guid: c232bfd77241e1540b504dfc8f73d95f
   - enabled: 1
@@ -58,10 +67,10 @@ EditorBuildSettings:
     guid: f5f275e3bc585c94eb28e3d7a088817c
   - enabled: 1
     path: Assets/Scenes/Chapter_3/Levels/Lvl_2_CH3.unity
-    guid: 7c92f312333417346a48c903d63620d4
+    guid: ef0b067bf537e9e449ef97676e858c70
   - enabled: 1
     path: Assets/Scenes/Chapter_3/Levels/Lvl_3_CH3.unity
-    guid: 111110645d2b4504bae0d6aac1385bb7
+    guid: ef5d9692b23716e449a38b36401caad9
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

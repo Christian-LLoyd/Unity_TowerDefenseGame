@@ -369,6 +369,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lvl_Complete 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7077472914068684794, guid: 6192b7a82f71697478f4201c6c8439ca, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Next_Level_2
+      objectReference: {fileID: 0}
     - target: {fileID: 8388070607239410642, guid: 6192b7a82f71697478f4201c6c8439ca, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -449,6 +453,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9207913051871039200, guid: 6192b7a82f71697478f4201c6c8439ca, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a473cacd7b0a2cb44bf0ea67935b7178, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
