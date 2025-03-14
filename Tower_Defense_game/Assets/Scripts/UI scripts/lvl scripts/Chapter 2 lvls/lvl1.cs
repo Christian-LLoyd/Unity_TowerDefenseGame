@@ -8,7 +8,7 @@ public class Chap2_lvl1 : MonoBehaviour
     //Load Scene
     public void Chap2_level1()
     {
-        SceneManager.LoadScene("Lvl_1_CH2");
+        SceneManager.LoadScene("Lvl_1-CH2-Intro");
     }
 
     //Quit Game

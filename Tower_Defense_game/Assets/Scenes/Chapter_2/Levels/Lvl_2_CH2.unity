@@ -718,6 +718,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lvl_Complete 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7077472914068684794, guid: 6192b7a82f71697478f4201c6c8439ca, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Next_Level_Ch2_2
+      objectReference: {fileID: 0}
     - target: {fileID: 8388070607239410642, guid: 6192b7a82f71697478f4201c6c8439ca, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -798,6 +802,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9207913051871039200, guid: 6192b7a82f71697478f4201c6c8439ca, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 81a1277ebf96beb45be9084463047062, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -965,6 +973,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1058881686064004278, guid: ed01927150c8ecf4f91988a38b6545b2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e9be8d3ed398c824c8b32dd9013808a1, type: 3}
+    - target: {fileID: 4160087866156752027, guid: ed01927150c8ecf4f91988a38b6545b2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d0857c973edf61c4e8ca37d7ae27ccc4, type: 3}
     - target: {fileID: 5726176086746261185, guid: ed01927150c8ecf4f91988a38b6545b2, type: 3}
       propertyPath: m_Name
       value: Pause_Menu

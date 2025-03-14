@@ -8,6 +8,6 @@ public class Chap2_lvl2 : MonoBehaviour
     //Load Scene
     public void Chap2_level2()
     {
-        SceneManager.LoadScene("Lvl_2_CH2");
+        SceneManager.LoadScene("Lvl_3-CH2-Intro");
     }
 }
