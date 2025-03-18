@@ -888,9 +888,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1237412349}
-        m_TargetAssemblyTypeName: Chap3_lvl1, Assembly-CSharp
-        m_MethodName: Chap3_level1
+      - m_Target: {fileID: 1237412347}
+        m_TargetAssemblyTypeName: Chap3_levelselect, Assembly-CSharp
+        m_MethodName: Chap3_lvl1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1234,9 +1234,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1237412348}
-        m_TargetAssemblyTypeName: Chap3_lvl2, Assembly-CSharp
-        m_MethodName: Chap3_level2
+      - m_Target: {fileID: 1237412347}
+        m_TargetAssemblyTypeName: Chap3_levelselect, Assembly-CSharp
+        m_MethodName: Chap3_lvl2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1431,8 +1431,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1237412344}
   - component: {fileID: 1237412346}
-  - component: {fileID: 1237412349}
-  - component: {fileID: 1237412348}
   - component: {fileID: 1237412347}
   m_Layer: 0
   m_Name: lvlselect_Screen
@@ -1478,31 +1476,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1237412342}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2e8f470bc2b0784e9214bea2792a756, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1237412348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1237412342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eed34c205d410e47805c23048625afb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1237412349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1237412342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d795d70ba2a55014ea018c354afa65c3, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b8bac89153bbf341a57832b52cea4c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1417744491
@@ -1726,8 +1700,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1237412347}
-        m_TargetAssemblyTypeName: Chap3_lvl3, Assembly-CSharp
-        m_MethodName: Chap3_level3
+        m_TargetAssemblyTypeName: Chap3_levelselect, Assembly-CSharp
+        m_MethodName: Chap3_lvl3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

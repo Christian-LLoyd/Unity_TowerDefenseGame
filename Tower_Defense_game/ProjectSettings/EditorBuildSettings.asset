@@ -49,13 +49,13 @@ EditorBuildSettings:
     guid: 84334828b0597d044b445cc7fea8f309
   - enabled: 1
     path: Assets/Scenes/Chapter_2/Levels/Lvl_2_CH2.unity
-    guid: feef3eeaccb70df4a930fa5e05a4dea4
+    guid: 9732822beca7f0c43a0fce037fd8b401
   - enabled: 1
     path: Assets/Scenes/Chapter_2/Lvl_3-CH2-Intro.unity
     guid: 0e881ffe80eece5439a9d7f53039313f
   - enabled: 1
     path: Assets/Scenes/Chapter_2/Levels/Lvl_3_CH2.unity
-    guid: 04aeb882cd06a894dbb1df8bb232bb57
+    guid: fc9c269b36c4e4244b8e0bc56f2cd525
   - enabled: 0
     path: Assets/Scenes/Chapter_3/Chapter3_intro.unity
     guid: c232bfd77241e1540b504dfc8f73d95f
@@ -63,14 +63,23 @@ EditorBuildSettings:
     path: Assets/Scenes/Chapter_3/Chapter3_Level_select.unity
     guid: d998505b64e369d42a600f118a97eff7
   - enabled: 1
+    path: Assets/Scenes/Chapter_3/Lvl_1-CH3-Intro.unity
+    guid: 83402262d4ded3d4db129b218b264a08
+  - enabled: 1
     path: Assets/Scenes/Chapter_3/Levels/Lvl_1_CH3.unity
     guid: f5f275e3bc585c94eb28e3d7a088817c
   - enabled: 1
+    path: Assets/Scenes/Chapter_3/Lvl_2-CH3-Intro.unity
+    guid: f38a6e5bdec6cc346b53fd1bbd10c68f
+  - enabled: 1
     path: Assets/Scenes/Chapter_3/Levels/Lvl_2_CH3.unity
-    guid: ef0b067bf537e9e449ef97676e858c70
+    guid: e27c5e368d53f3f40b3d6089410cffd5
+  - enabled: 1
+    path: Assets/Scenes/Chapter_3/Lvl_3-CH3-Intro.unity
+    guid: 692ac1b05b9ee86469b1f5f43476d621
   - enabled: 1
     path: Assets/Scenes/Chapter_3/Levels/Lvl_3_CH3.unity
-    guid: ef5d9692b23716e449a38b36401caad9
+    guid: c208d548d6c188e43a3639d271403d57
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

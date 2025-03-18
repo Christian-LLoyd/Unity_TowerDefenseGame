@@ -11,10 +11,4 @@ public class Chap1_lvl1 : MonoBehaviour
         SceneManager.LoadScene("Lvl_1-Intro");
     }
 
-    //Quit Game
-    public void Exit_Button()
-    {
-        Application.Quit();
-        Debug.Log("The Player has Quit the game");
-    }
 }

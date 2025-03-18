@@ -56,6 +56,29 @@ public class LevelComplete : MonoBehaviour
 
     }
 
+    public void Next_Level_Ch3_1()
+    {
+                
+        SceneManager.LoadScene("Lvl_2-CH3-Intro");
+
+    }
+
+     public void Next_Level_Ch3_2()
+    {
+                
+        SceneManager.LoadScene("Lvl_3-CH3-Intro");
+
+    }
+
+    public void Next_Level_Ch3_3()
+    {
+                
+        SceneManager.LoadScene("Finish_Game");
+
+    }
+
+    
+
 
 
 

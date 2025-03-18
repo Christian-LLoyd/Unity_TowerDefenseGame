@@ -161,7 +161,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 401943307}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fef29c775e9007e4dad453445a018357, type: 3}
+  m_Script: {fileID: 11500000, guid: 380ac3490bcad9b4f8482eb498eadeab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &544696911
@@ -895,8 +895,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 401943309}
-        m_TargetAssemblyTypeName: lvl1CH3Intro, Assembly-CSharp
-        m_MethodName: ContinueButton
+        m_TargetAssemblyTypeName: Chap3_intros, Assembly-CSharp
+        m_MethodName: Chap3_intro_1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

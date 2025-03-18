@@ -657,6 +657,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3298302883369667854, guid: 6192b7a82f71697478f4201c6c8439ca, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3298302883369667854, guid: 6192b7a82f71697478f4201c6c8439ca, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5d2cd1ecca471fd4a9867158ab715365, type: 3}
+    - target: {fileID: 4422999841173171651, guid: 6192b7a82f71697478f4201c6c8439ca, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4576376409478170028, guid: 6192b7a82f71697478f4201c6c8439ca, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734165007545182942, guid: 6192b7a82f71697478f4201c6c8439ca, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6026369677750426830, guid: 6192b7a82f71697478f4201c6c8439ca, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6207688446543684888, guid: 6192b7a82f71697478f4201c6c8439ca, type: 3}
       propertyPath: m_Name
       value: Lvl_Complete 1
@@ -1038,9 +1062,25 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: d0857c973edf61c4e8ca37d7ae27ccc4, type: 3}
+    - target: {fileID: 5116008806520260309, guid: ed01927150c8ecf4f91988a38b6545b2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 42ddc115acbb1164c9183a8b2840bad0, type: 3}
     - target: {fileID: 5726176086746261185, guid: ed01927150c8ecf4f91988a38b6545b2, type: 3}
       propertyPath: m_Name
       value: Pause_Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412230186685220638, guid: ed01927150c8ecf4f91988a38b6545b2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8079265143156467742, guid: ed01927150c8ecf4f91988a38b6545b2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c0027cb931aed6c43bf1d89f0d1981cd, type: 3}
+    - target: {fileID: 8287134420024664682, guid: ed01927150c8ecf4f91988a38b6545b2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8683622181200576885, guid: ed01927150c8ecf4f91988a38b6545b2, type: 3}
       propertyPath: m_Pivot.x
