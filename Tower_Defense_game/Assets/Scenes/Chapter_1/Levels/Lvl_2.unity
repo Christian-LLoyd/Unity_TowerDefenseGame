@@ -383,7 +383,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6026369677750426830, guid: 6192b7a82f71697478f4201c6c8439ca, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6207688446543684888, guid: 6192b7a82f71697478f4201c6c8439ca, type: 3}
       propertyPath: m_Name
@@ -391,7 +391,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6207688446543684888, guid: 6192b7a82f71697478f4201c6c8439ca, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7077472914068684794, guid: 6192b7a82f71697478f4201c6c8439ca, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
