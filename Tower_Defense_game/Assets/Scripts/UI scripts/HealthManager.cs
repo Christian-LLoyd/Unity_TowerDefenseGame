@@ -13,19 +13,9 @@ public class HealthManager : MonoBehaviour
 
     void Update()
     {
-        if (healthAmount <= 0)
-        {
-            Application.LoadLevel(Application.loadedLevel);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            TakeDamage(10);
-        }
-
-        // if (Input.GetKeyDown(KeyCode.Space))
+        // if (healthAmount <= 0)
         // {
-        //     Heal(5);
+        //     Application.LoadLevel(Application.loadedLevel);
         // }
     }
 

@@ -4,7 +4,7 @@ public class Target_Castle : MonoBehaviour
 {
     public float Total_Health = 100f;
     public float Current_Health;
-    private float _lastDamageTime; 
+    private float _lastDamageTime;
     public float DamageCooldown = 0.5f;
 
     private HealthManager healthManager; // Reference to UI HealthManager
@@ -32,7 +32,7 @@ public class Target_Castle : MonoBehaviour
 
         Debug.Log("Castle is taking damage! Called by: " + gameObject.name);
         Current_Health -= DamageToTake;
-        _lastDamageTime = Time.time; 
+        _lastDamageTime = Time.time;
 
         if (healthManager != null)
         {
@@ -41,9 +41,12 @@ public class Target_Castle : MonoBehaviour
 
         if (Current_Health <= 0)
         {
-            Debug.Log("Castle Destroyed!");
+            Debug.Log("🔥Castle Destroyed!");
             Current_Health = 0;
             gameObject.SetActive(false);
+
+            // Notify LevelManager that the castle is destroyed
+            LevelManager.instance.CastleDestroyed();
         }
     }
 }

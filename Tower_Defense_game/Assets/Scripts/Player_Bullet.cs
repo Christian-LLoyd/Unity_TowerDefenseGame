@@ -8,70 +8,77 @@ public class Player_Bullet : MonoBehaviour
     public float bulletSpeed = 50f;
     public int bulletDamage = 150;
 
-    public Transform gunTip; //  Assign the arm transform (arm stays static)
+    public Transform gunTip;
+
+    // Delegate to notify PlayerMovement of shoot direction
+    public System.Action<Vector3> OnShootDirection;
+
     public void Shoot()
     {
+        // Prevent shooting if the game is over or paused
+        if (!LevelManager.instance.levelActive || Time.timeScale == 0f)
+        {
+            Debug.Log("❌ Shooting disabled (Game paused or ended)");
+            return;
+        }
+
         if (gunTip == null || mainCamera == null || bulletPrefab == null)
         {
             Debug.LogError("Missing references! Make sure gunTip is assigned.");
             return;
         }
 
-        // Raycast to find where the cursor is pointing
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
         Vector3 targetPoint;
 
         if (Physics.Raycast(ray, out hit))
         {
-            targetPoint = hit.point; // Cursor hit point
+            targetPoint = hit.point;
         }
         else
         {
-            targetPoint = ray.origin + ray.direction * 50f; // Fallback if no hit
+            targetPoint = ray.origin + ray.direction * 50f;
         }
 
-    
-        targetPoint.y = gunTip.position.y; // Keep it on the same height as the arm
+        targetPoint.y = gunTip.position.y;
 
         Vector3 direction = (targetPoint - gunTip.position).normalized;
 
-        //Visualize aiming
-        Debug.DrawRay(gunTip.position, direction * 10, Color.red, 2f);
-        Debug.DrawLine(gunTip.position, targetPoint, Color.green, 2f);
-        Debug.Log($"🎯 Target Position: {targetPoint} | 🏹 Bullet Spawn: {gunTip.position}");
+        // Notify PlayerMovement to rotate instantly toward the shooting direction
+        OnShootDirection?.Invoke(direction);
 
-        // Fire bullet at gunTip
         GameObject bullet = Instantiate(bulletPrefab, gunTip.position, Quaternion.LookRotation(direction));
 
-        // Configure Rigidbody
         Rigidbody rb = bullet.GetComponent<Rigidbody>();
         if (rb != null)
         {
-            rb.linearVelocity = direction * bulletSpeed; // ✅ Bullet moves correctly
+            rb.linearVelocity = direction * bulletSpeed;
             rb.useGravity = false;
             rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
         }
-        else
-        {
-            Debug.LogError("Bullet is missing a Rigidbody!");
-        }
 
-        // ✅ Destroy bullet after 3 seconds
-        Destroy(bullet, 3f);
+        Destroy(bullet, 3f); // Bullet gets destroyed after 3 seconds
     }
 
+    void Update()
+    {
+        // Destroy bullets only if they are already active when the game ends
+        if (!LevelManager.instance.levelActive)
+        {
+            if (gameObject.activeInHierarchy)
+            {
+                Destroy(gameObject);
+            }
+        }
+    }
 
-    // Fixed Bullet Collisiom
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("🔥 Bullet hit: " + other.gameObject.name + " | Tag: " + other.tag);
-
         if (other.CompareTag("Enemy"))
         {
             Debug.Log("✅ Enemy Hit! Applying Damage...");
-            
-            // Damage enemy
+
             Enemy_Controller enemy = other.GetComponent<Enemy_Controller>();
             if (enemy != null)
             {
@@ -79,8 +86,6 @@ public class Player_Bullet : MonoBehaviour
             }
         }
 
-        // ✅ Destroy bullet immediately on ANY hit (enemy, tree, ground, etc.)
-        Destroy(gameObject);
+        Destroy(gameObject); // Destroy bullet on collision
     }
-
 }
