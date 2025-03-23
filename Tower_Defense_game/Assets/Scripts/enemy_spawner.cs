@@ -18,7 +18,7 @@ public class enemy_spawner : MonoBehaviour
 
     void Update()
     {
-        if (currentEnemyCount < maxEnemies)
+        if (LevelManager.instance.levelActive && currentEnemyCount < maxEnemies)
         {
             timer -= Time.deltaTime;
 

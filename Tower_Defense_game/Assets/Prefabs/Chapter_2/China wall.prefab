@@ -1,0 +1,1797 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4784393505077150019
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4927059779521316330}
+  m_Layer: 0
+  m_Name: China wall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4927059779521316330
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4784393505077150019}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -19.417955, y: -10.425038, z: -20.028225}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2821930861977285210}
+  - {fileID: 7083215437232302914}
+  - {fileID: 2572757908527353042}
+  - {fileID: 7107213918420365497}
+  - {fileID: 2023263587879469180}
+  - {fileID: 3803950666791139537}
+  - {fileID: 4225079669398221097}
+  - {fileID: 2881151956373719901}
+  - {fileID: 8484981533500939364}
+  - {fileID: 393668949943131824}
+  - {fileID: 6579758101935479331}
+  - {fileID: 8034916692420374852}
+  - {fileID: 4333649823440477275}
+  - {fileID: 706889179963958441}
+  - {fileID: 8498497538825878382}
+  - {fileID: 6257862584540759536}
+  - {fileID: 3437710116898781699}
+  - {fileID: 597588896958023072}
+  - {fileID: 2983726398441505638}
+  - {fileID: 3264928666656990061}
+  - {fileID: 3578626541085870067}
+  - {fileID: 672099167273656414}
+  - {fileID: 7202281527458536962}
+  - {fileID: 7805702495767723815}
+  - {fileID: 1698945879280834315}
+  - {fileID: 5174024639124380629}
+  - {fileID: 2336476865489051758}
+  - {fileID: 8879717459542914761}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &215098209193392475
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4927059779521316330}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 89.01636
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.8250384
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 23.61789
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.004853573
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99998826
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 179.444
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_Name
+      value: China_Boat (26)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+--- !u!4 &393668949943131824 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+  m_PrefabInstance: {fileID: 215098209193392475}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1028481577785279298
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4927059779521316330}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -56.09111
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.8250384
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.7079849
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.004853573
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99998826
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 179.444
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_Name
+      value: China_Boat (18)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+--- !u!4 &706889179963958441 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+  m_PrefabInstance: {fileID: 1028481577785279298}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1070026972728641461
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4927059779521316330}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -42.250927
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.8250384
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 61.894577
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.71488255
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.69924456
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 88.733
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_Name
+      value: China_Boat (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+--- !u!4 &672099167273656414 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+  m_PrefabInstance: {fileID: 1070026972728641461}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1135389323455881803
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4927059779521316330}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 60.249073
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.8250384
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 64.29457
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.71488255
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.69924456
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 88.733
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_Name
+      value: China_Boat (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+--- !u!4 &597588896958023072 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+  m_PrefabInstance: {fileID: 1135389323455881803}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1160071885977333984
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4927059779521316330}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 84
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.8250384
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -93.99999
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.71488255
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.69924456
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 88.733
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_Name
+      value: China_Boat (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+--- !u!4 &1698945879280834315 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+  m_PrefabInstance: {fileID: 1160071885977333984}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1990216093447530391
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4927059779521316330}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 89.41727
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.8250384
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -17.041172
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.004853573
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99998826
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 179.444
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_Name
+      value: China_Boat (21)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+--- !u!4 &2023263587879469180 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+  m_PrefabInstance: {fileID: 1990216093447530391}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2337738798012476598
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4927059779521316330}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 90.049286
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.8250384
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -78.50352
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.004853573
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99998826
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 179.444
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_Name
+      value: China_Boat (24)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+--- !u!4 &2881151956373719901 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+  m_PrefabInstance: {fileID: 2337738798012476598}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2351787578142971313
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4927059779521316330}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 22.55093
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.8250384
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -95.39456
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.71488255
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.69924456
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 88.733
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_Name
+      value: China_Boat
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+--- !u!4 &2821930861977285210 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+  m_PrefabInstance: {fileID: 2351787578142971313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2611802815754201913
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4927059779521316330}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -55.935772
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.8250384
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -18.446407
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.004853573
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99998826
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 179.444
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_Name
+      value: China_Boat (14)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+--- !u!4 &2572757908527353042 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+  m_PrefabInstance: {fileID: 2611802815754201913}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2875104335603812229
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4927059779521316330}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -18.099998
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.8250384
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -96.29999
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.71488255
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.69924456
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 88.733
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_Name
+      value: China_Boat (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+--- !u!4 &2336476865489051758 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+  m_PrefabInstance: {fileID: 2875104335603812229}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2900188822593199592
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4927059779521316330}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 39.84907
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.8250384
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 63.794563
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.71488255
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.69924456
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 88.733
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_Name
+      value: China_Boat (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+--- !u!4 &3437710116898781699 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+  m_PrefabInstance: {fileID: 2900188822593199592}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3082118213906531462
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4927059779521316330}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.1509285
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.8250384
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 62.894577
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.71488255
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.69924456
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 88.733
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_Name
+      value: China_Boat (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+--- !u!4 &3264928666656990061 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+  m_PrefabInstance: {fileID: 3082118213906531462}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3378520113651295373
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4927059779521316330}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 80.449066
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.8250384
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 64.69457
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.71488255
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.69924456
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 88.733
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_Name
+      value: China_Boat (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+--- !u!4 &2983726398441505638 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+  m_PrefabInstance: {fileID: 3378520113651295373}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3693199665782546234
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4927059779521316330}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 89.653046
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.8250384
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -37.894764
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.004853573
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99998826
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 179.444
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_Name
+      value: China_Boat (22)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+--- !u!4 &3803950666791139537 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+  m_PrefabInstance: {fileID: 3693199665782546234}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3901081126139600920
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4927059779521316330}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -21.650928
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.8250384
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 62.394577
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.71488255
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.69924456
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 88.733
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_Name
+      value: China_Boat (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+--- !u!4 &3578626541085870067 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+  m_PrefabInstance: {fileID: 3901081126139600920}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4300531858810600368
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4927059779521316330}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -55.303757
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.8250384
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -79.90875
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.004853573
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99998826
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 179.444
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_Name
+      value: China_Boat (17)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+--- !u!4 &4333649823440477275 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+  m_PrefabInstance: {fileID: 4300531858810600368}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4406990967673575106
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4927059779521316330}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 89.9
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.8250384
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -58.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.004853573
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99998826
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 179.444
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_Name
+      value: China_Boat (23)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+--- !u!4 &4225079669398221097 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+  m_PrefabInstance: {fileID: 4406990967673575106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4631787850442865726
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4927059779521316330}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.4000015
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.8250384
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -95.79999
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.71488255
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.69924456
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 88.733
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_Name
+      value: China_Boat (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+--- !u!4 &5174024639124380629 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+  m_PrefabInstance: {fileID: 4631787850442865726}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5859989744603095579
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4927059779521316330}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -56.580902
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.8250384
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 42.816875
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.004853573
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99998826
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 179.444
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_Name
+      value: China_Boat (20)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+--- !u!4 &6257862584540759536 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+  m_PrefabInstance: {fileID: 5859989744603095579}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6684826585190743496
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4927059779521316330}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 88.77214
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.8250384
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 44.22211
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.004853573
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99998826
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 179.444
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_Name
+      value: China_Boat (27)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+--- !u!4 &6579758101935479331 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+  m_PrefabInstance: {fileID: 6684826585190743496}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7239850443339954665
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4927059779521316330}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 43.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.8250384
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -94.9
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.71488255
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.69924456
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 88.733
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_Name
+      value: China_Boat (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+--- !u!4 &7202281527458536962 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+  m_PrefabInstance: {fileID: 7239850443339954665}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7290021689785915218
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4927059779521316330}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -55.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.8250384
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -39.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.004853573
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99998826
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 179.444
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_Name
+      value: China_Boat (15)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+--- !u!4 &7107213918420365497 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+  m_PrefabInstance: {fileID: 7290021689785915218}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7333579366182816937
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4927059779521316330}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.8250384
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 63.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.71488255
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.69924456
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 88.733
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_Name
+      value: China_Boat (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+--- !u!4 &7083215437232302914 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+  m_PrefabInstance: {fileID: 7333579366182816937}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7497221606690772655
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4927059779521316330}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -55.45304
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.8250384
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -59.70524
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.004853573
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99998826
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 179.444
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_Name
+      value: China_Boat (16)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+--- !u!4 &8034916692420374852 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+  m_PrefabInstance: {fileID: 7497221606690772655}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7771476197629761740
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4927059779521316330}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 63.800003
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.8250384
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -94.399994
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.71488255
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.69924456
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 88.733
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_Name
+      value: China_Boat (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+--- !u!4 &7805702495767723815 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+  m_PrefabInstance: {fileID: 7771476197629761740}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8235408898793667471
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4927059779521316330}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 89.26193
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.8250384
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.1132202
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.004853573
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99998826
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 179.444
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_Name
+      value: China_Boat (25)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+--- !u!4 &8484981533500939364 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+  m_PrefabInstance: {fileID: 8235408898793667471}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8248908972199910533
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4927059779521316330}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -56.33668
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.8250384
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 22.212654
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.004853573
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99998826
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 179.444
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_Name
+      value: China_Boat (19)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+--- !u!4 &8498497538825878382 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+  m_PrefabInstance: {fileID: 8248908972199910533}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8985154626145669410
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4927059779521316330}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -38.699997
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.8250384
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -96.79999
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.71488255
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.69924456
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 88.733
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+      propertyPath: m_Name
+      value: China_Boat (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+--- !u!4 &8879717459542914761 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16b8f84b70c1fb84a80b7880a6c506a1, type: 3}
+  m_PrefabInstance: {fileID: 8985154626145669410}
+  m_PrefabAsset: {fileID: 0}
