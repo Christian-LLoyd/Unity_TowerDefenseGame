@@ -3,11 +3,14 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 10f;
+    public float moveSpeed = 10f;
     public float rotationSpeed = 10f;
 
     private Rigidbody rb;
     public Player_Bullet gun;
     private Vector3 moveDirection;
+    private Vector3 shootDirection;
+    private bool recentlyShot; // Tracks recent shooting
     private Vector3 shootDirection;
     private bool recentlyShot; // Tracks recent shooting
     private Animator animator;
@@ -16,7 +19,12 @@ public class PlayerMovement : MonoBehaviour
     private float shootCooldownTimer = 0f;
     public float shootCooldownDuration = 0.3f;
 
+    // Shooting Cooldown (helps prioritize shooting rotation temporarily)
+    private float shootCooldownTimer = 0f;
+    public float shootCooldownDuration = 0.3f;
+
     // Dash Variables
+    public float dashDistance = 5f;
 <<<<<<< Updated upstream
     public float dashDistance = 5f; // ✅ Fixed distance dash
 =======
@@ -42,9 +50,16 @@ public class PlayerMovement : MonoBehaviour
 
         rb.constraints = RigidbodyConstraints.FreezeRotationX |
                          RigidbodyConstraints.FreezeRotationZ |
+        rb.constraints = RigidbodyConstraints.FreezeRotationX |
+                         RigidbodyConstraints.FreezeRotationZ |
                          RigidbodyConstraints.FreezePositionY;
 
         animator.ResetTrigger("Dash");
+
+        if (gun != null)
+        {
+            gun.OnShootDirection += RotatePlayerToShootDirection;
+        }
 
         if (gun != null)
         {
@@ -56,6 +71,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!LevelManager.instance.levelActive) return; // Stop movement if the game has ended
 
+        if (!LevelManager.instance.levelActive) return; // Stop movement if the game has ended
+
         if (!isDashing)
         {
             HandleMovementInput();
@@ -64,6 +81,20 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Shoot"))
         {
+            if (gun != null)
+            {
+                gun.Shoot();
+                animator.SetTrigger("Shoot");
+
+                recentlyShot = true;
+                shootCooldownTimer = shootCooldownDuration; // Shooting cooldown activated
+            }
+            else
+            {
+                Debug.LogError("Gun reference is missing in PlayerMovement!");
+            }
+        }
+
             if (gun != null)
             {
                 gun.Shoot();
@@ -104,10 +135,29 @@ public class PlayerMovement : MonoBehaviour
     {
         shootDirection = direction;
         transform.rotation = Quaternion.LookRotation(shootDirection); 
+
+        // Handle Shooting Cooldown
+        if (recentlyShot && shootCooldownTimer > 0)
+        {
+            shootCooldownTimer -= Time.deltaTime;
+        }
+        else
+        {
+            recentlyShot = false;
+        }
+    }
+
+    // Rotate toward shooting direction when shooting occurs
+    void RotatePlayerToShootDirection(Vector3 direction)
+    {
+        shootDirection = direction;
+        transform.rotation = Quaternion.LookRotation(shootDirection); 
     }
 
     void FixedUpdate()
     {
+        if (!LevelManager.instance.levelActive) return; // Stop movement if the game has ended
+
         if (!LevelManager.instance.levelActive) return; // Stop movement if the game has ended
 
         if (isDashing)
@@ -119,6 +169,15 @@ public class PlayerMovement : MonoBehaviour
             MovePlayer();
         }
 
+        // Priority: Shooting rotation first, otherwise movement rotation
+        if (recentlyShot)
+        {
+            transform.rotation = Quaternion.LookRotation(shootDirection);
+        }
+        else
+        {
+            RotatePlayer();
+        }
         // Priority: Shooting rotation first, otherwise movement rotation
         if (recentlyShot)
         {
@@ -155,6 +214,10 @@ public class PlayerMovement : MonoBehaviour
 
             // Instantly rotate to face movement direction with shortest path logic
             transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, 720f * Time.deltaTime);
+            Quaternion targetRotation = Quaternion.LookRotation(moveDirection);
+
+            // Instantly rotate to face movement direction with shortest path logic
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, 720f * Time.deltaTime);
         }
     }
 
@@ -162,6 +225,11 @@ public class PlayerMovement : MonoBehaviour
     {
         bool isMoving = moveDirection.sqrMagnitude > 0.01f;
         animator.SetBool("isWalking", isMoving);
+
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Kapre_Shoot"))
+        {
+            animator.SetBool("isWalking", false);
+        }
 
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("Kapre_Shoot"))
         {
@@ -197,6 +265,7 @@ public class PlayerMovement : MonoBehaviour
         if (obstacleDetected)
         {
             float buffer = 0.5f;
+            float buffer = 0.5f;
             intendedDashDistance = Mathf.Max(0, hit.distance - buffer);
         }
 
@@ -230,6 +299,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
 <<<<<<< Updated upstream
         Debug.Log("🔥 Player Collided with: " + collision.gameObject.name);
@@ -244,8 +314,10 @@ public class PlayerMovement : MonoBehaviour
 
             Vector3 collisionNormal = collision.contacts[0].normal;
             Vector3 pushbackPosition = transform.position + collisionNormal * 0.2f;
+            Vector3 pushbackPosition = transform.position + collisionNormal * 0.2f;
             rb.MovePosition(pushbackPosition);
 
+            rb.AddForce(collisionNormal * 2f, ForceMode.Impulse);
             rb.AddForce(collisionNormal * 2f, ForceMode.Impulse);
         }
 >>>>>>> Stashed changes
