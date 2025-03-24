@@ -17,6 +17,8 @@ public class PickaxeEnemy : Enemy_Controller
         if (target == null) return;
 
         float distanceToTarget = Vector3.Distance(transform.position, target.position);
+        animator.SetBool("IsWalking", false);
+        Debug.Log("HUMINTO MUNA BAGO AKO UMATAKEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
 
         if (distanceToTarget > stopDistance)
         {
@@ -24,11 +26,14 @@ public class PickaxeEnemy : Enemy_Controller
             return; // Remove the ResetTrigger to avoid canceling the animation
         }
 
-        if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Attack_Pickaxe"))
-        {
-            animator.SetTrigger("Attack_Pickaxe");
-            Debug.Log("⛏️ Pickaxe Enemy attacked!");
-        }
+        // if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Attack_Pickaxe"))
+        // {
+        //     animator.SetTrigger("Attack_Pickaxe");
+        //     Debug.Log("⛏️ Pickaxe Enemy attacked!");
+        // }
+         // Play attack animation immediately
+        animator.SetTrigger("Attack_Pickaxe");
+        Debug.Log("⛏️ Pickaxe Enemy attacked!");
     }
 
 

@@ -42,6 +42,8 @@ public abstract class Enemy_Controller : MonoBehaviour
             Debug.LogError("⚠️ TheCastle is NULL! Make sure the Target_Castle script is on the correct GameObject.");
         }
     }
+    //test code for attack range
+     public bool hasEnteredAttackRange = false;
 
     void Update()
     {
@@ -63,6 +65,7 @@ public abstract class Enemy_Controller : MonoBehaviour
 
         if (distance > stopDistance)
         {
+            hasEnteredAttackRange = false; 
             Vector3 direction = (target.position - transform.position).normalized;
             direction.y = 0;
 
@@ -77,6 +80,11 @@ public abstract class Enemy_Controller : MonoBehaviour
         }
         else
         {
+            if (!hasEnteredAttackRange)
+            {
+                hasEnteredAttackRange = true;
+                attackCounter = 0; // Force immediate attack
+            }
             rb.linearVelocity = Vector3.zero;
             SetWalkingAnimation(false);
         }
@@ -94,6 +102,7 @@ public abstract class Enemy_Controller : MonoBehaviour
             float modifiedDamage = DamageToTake * damageMultiplier;
             TheCastle.Apply_Damage(modifiedDamage);
             attackCounter = timeBetweenAttacks; // Reset cooldown AFTER Attack()
+            
         }
     }
 

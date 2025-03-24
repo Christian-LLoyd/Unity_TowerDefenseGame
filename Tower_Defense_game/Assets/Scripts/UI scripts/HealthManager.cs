@@ -11,6 +11,7 @@ public class HealthManager : MonoBehaviour
         UpdateHealthUI();
     }
 
+<<<<<<< Updated upstream
     void Update()
     {
         // if (healthAmount <= 0)
@@ -19,23 +20,30 @@ public class HealthManager : MonoBehaviour
         // }
     }
 
+=======
+>>>>>>> Stashed changes
     public void TakeDamage(float damage)
     {
-        healthAmount -= damage;
-        UpdateHealthUI();
-    }
+        if (healthAmount <= 0) return; // Already at zero health, no further logic needed
 
-    public void Heal(float healingAmount)
-    {
-        healthAmount += healingAmount;
-        healthAmount = Mathf.Clamp(healthAmount, 0, 100);
+        healthAmount = Mathf.Clamp(healthAmount - damage, 0, 100f);
         UpdateHealthUI();
+
+        // If health reaches zero, trigger LevelManager's defeat logic
+        if (healthAmount <= 0 && LevelManager.instance != null)
+        {
+            LevelManager.instance.CastleDestroyed();
+        }
     }
 
     public void SetHealth(float currentHealth, float maxHealth)
     {
-        healthAmount = currentHealth;
-        healthBar.fillAmount = currentHealth / maxHealth;
+        healthAmount = Mathf.Clamp(currentHealth, 0, maxHealth);
+
+        if (healthBar != null)
+        {
+            healthBar.fillAmount = healthAmount / maxHealth;
+        }
     }
 
     private void UpdateHealthUI()
