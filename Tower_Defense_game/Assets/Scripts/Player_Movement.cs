@@ -9,9 +9,10 @@ public class PlayerMovement : MonoBehaviour
     public Player_Bullet gun;
     private Vector3 moveDirection;
     private Vector3 shootDirection;
-    private bool recentlyShot;
+    private bool recentlyShot; 
     private Animator animator;
 
+    // Shooting Cooldown
     private float shootCooldownTimer = 0f;
     public float shootCooldownDuration = 0.3f;
 
@@ -32,11 +33,10 @@ public class PlayerMovement : MonoBehaviour
 
         rb.freezeRotation = true;
         rb.isKinematic = false;
-        rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
+        rb.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
         rb.interpolation = RigidbodyInterpolation.Interpolate;
 
-        rb.constraints = RigidbodyConstraints.FreezeRotationX |
-                         RigidbodyConstraints.FreezeRotationZ |
+        rb.constraints = RigidbodyConstraints.FreezeRotation | 
                          RigidbodyConstraints.FreezePositionY;
 
         animator.ResetTrigger("Dash");
@@ -63,7 +63,6 @@ public class PlayerMovement : MonoBehaviour
             {
                 gun.Shoot();
                 animator.SetTrigger("Shoot");
-
                 recentlyShot = true;
                 shootCooldownTimer = shootCooldownDuration;
             }
@@ -168,15 +167,7 @@ public class PlayerMovement : MonoBehaviour
         float intendedDashDistance = dashDistance;
 
         RaycastHit hit;
-        bool obstacleDetected = Physics.Raycast(
-            transform.position,
-            dashDirection,
-            out hit,
-            dashDistance,
-            LayerMask.GetMask("Tree")
-        );
-
-        if (obstacleDetected)
+        if (Physics.Raycast(transform.position, dashDirection, out hit, dashDistance, LayerMask.GetMask("Tree")))
         {
             float buffer = 0.5f;
             intendedDashDistance = Mathf.Max(0, hit.distance - buffer);
@@ -187,11 +178,7 @@ public class PlayerMovement : MonoBehaviour
 
     void DashForward()
     {
-        rb.MovePosition(Vector3.MoveTowards(
-            transform.position,
-            dashTarget,
-            moveSpeed * 10f * Time.fixedDeltaTime
-        ));
+        rb.MovePosition(Vector3.MoveTowards(transform.position, dashTarget, moveSpeed * 10f * Time.fixedDeltaTime));
 
         if (Vector3.Distance(transform.position, dashTarget) < 0.1f)
         {
@@ -211,10 +198,22 @@ public class PlayerMovement : MonoBehaviour
             }
 
             Vector3 collisionNormal = collision.contacts[0].normal;
-            Vector3 pushbackPosition = transform.position + collisionNormal * 0.2f;
+            Vector3 pushbackPosition = transform.position + collisionNormal * 0.5f;
             rb.MovePosition(pushbackPosition);
 
-            rb.AddForce(collisionNormal * 2f, ForceMode.Impulse);
+            rb.AddForce(collisionNormal * 5f, ForceMode.Impulse);
+        }
+
+        // 🚨 Enemy Collision Fix
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            // Cancel rotation force and prevent erratic spins
+            rb.angularVelocity = Vector3.zero;
+            rb.linearVelocity = Vector3.zero;
+
+            // Controlled Knockback for Better Stability
+            Vector3 knockbackDirection = (transform.position - collision.transform.position).normalized;
+            rb.AddForce(knockbackDirection * 3f, ForceMode.VelocityChange);
         }
     }
 }
