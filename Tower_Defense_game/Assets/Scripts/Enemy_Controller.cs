@@ -35,7 +35,7 @@ public abstract class Enemy_Controller : MonoBehaviour
                          RigidbodyConstraints.FreezePositionY;
 
         attackCounter = timeBetweenAttacks;
-        TheCastle = FindObjectOfType<Target_Castle>();
+        TheCastle = Object.FindFirstObjectByType<Target_Castle>();
 
         if (TheCastle == null)
         {

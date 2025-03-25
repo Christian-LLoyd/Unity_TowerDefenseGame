@@ -195,25 +195,30 @@ public class PlayerMovement : MonoBehaviour
             {
                 isDashing = false;
                 dashCooldownTimer = dashCooldown;
+
+                Vector3 collisionNormal = collision.contacts[0].normal;
+                Vector3 pushbackPosition = transform.position + collisionNormal * 0.2f; // Reduced buffer distance
+                rb.MovePosition(pushbackPosition);
+
+                rb.AddForce(collisionNormal * 2f, ForceMode.Impulse); // Reduced knockback force
             }
-
-            Vector3 collisionNormal = collision.contacts[0].normal;
-            Vector3 pushbackPosition = transform.position + collisionNormal * 0.5f;
-            rb.MovePosition(pushbackPosition);
-
-            rb.AddForce(collisionNormal * 5f, ForceMode.Impulse);
+            else
+            {
+                // Prevent physics from overreacting by zeroing out forces
+                rb.linearVelocity = Vector3.zero;
+                rb.angularVelocity = Vector3.zero;
+            }
         }
 
-        // 🚨 Enemy Collision Fix
+        // Enemy Collision Fix
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            // Cancel rotation force and prevent erratic spins
             rb.angularVelocity = Vector3.zero;
             rb.linearVelocity = Vector3.zero;
 
-            // Controlled Knockback for Better Stability
             Vector3 knockbackDirection = (transform.position - collision.transform.position).normalized;
             rb.AddForce(knockbackDirection * 3f, ForceMode.VelocityChange);
         }
     }
+
 }
