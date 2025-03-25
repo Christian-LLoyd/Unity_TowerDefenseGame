@@ -5,7 +5,7 @@ public class TreeTransparency : MonoBehaviour
     private Renderer treeRenderer;
     private Color originalColor;
     public float fadeAmount = 0.3f; // Transparency when hiding
-    public float detectRadius = 2f; // Detection range for the player
+    public float detectRadius = 2f; // Detection range for the player and enemy
 
     void Start()
     {
@@ -18,30 +18,37 @@ public class TreeTransparency : MonoBehaviour
 
     void Update()
     {
-        if (IsPlayerBehindTree())
+        if (IsEntityBehindTree("Player") || IsEntityBehindTree("Enemy"))
         {
-            SetTransparency(fadeAmount); // ✅ Fade out when player is behind
+            SetTransparency(fadeAmount);
+        //    Debug.Log($"🟡 {tag} detected nearby the tree.");
+
         }
         else
         {
-            SetTransparency(1f); // ✅ Restore visibility when player moves away
+            SetTransparency(1f);
         }
     }
 
-    bool IsPlayerBehindTree()
+    bool IsEntityBehindTree(string tag)
+{
+    GameObject[] entities = GameObject.FindGameObjectsWithTag(tag); // Handles multiple enemies or players
+    foreach (GameObject entity in entities)
     {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        if (player == null) return false;
-
-        Vector3 direction = player.transform.position - transform.position;
+        Vector3 direction = entity.transform.position - transform.position;
         RaycastHit hit;
 
         if (Physics.Raycast(transform.position, direction, out hit, detectRadius))
         {
-            return hit.collider.CompareTag("Player");
+            if (hit.collider.CompareTag(tag))
+            {
+                return true;
+            }
         }
-        return false;
     }
+    return false;
+}
+
 
     void SetTransparency(float alpha)
     {

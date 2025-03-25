@@ -2,36 +2,30 @@ using UnityEngine;
 
 public class Target_Health : MonoBehaviour
 {
-
+    [Header("Health Settings")]
     public float totalHealth = 100f;
     private float currentHealth;
+
     void Start()
     {
         currentHealth = totalHealth;
-
     }
 
-
-
-
-
-
-    void Update()
+    public void TakeDamage(float damageToTake)
     {
-        
-    }
+        if (currentHealth <= 0) return; // Avoids taking damage when already "dead"
 
-    public void takeDamage(float damageToTake)
-    {
-        currentHealth -= damageToTake;
+        currentHealth = Mathf.Max(currentHealth - damageToTake, 0); // Prevents negative health
 
-        if(currentHealth <=0)
+        if (currentHealth <= 0)
         {
-            gameObject.SetActive(false);
+            Die();
         }
-
-
-
     }
 
+    private void Die()
+    {
+        Debug.Log($"{gameObject.name} has been destroyed!");
+        gameObject.SetActive(false); // Efficiently handles object removal
+    }
 }

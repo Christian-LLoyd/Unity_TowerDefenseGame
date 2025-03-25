@@ -70,16 +70,19 @@ EditorBuildSettings:
     guid: f5f275e3bc585c94eb28e3d7a088817c
   - enabled: 1
     path: Assets/Scenes/Chapter_3/Lvl_2-CH3-Intro.unity
-    guid: f38a6e5bdec6cc346b53fd1bbd10c68f
+    guid: ff88698153740e64d9168e884e0c4e5c
   - enabled: 1
     path: Assets/Scenes/Chapter_3/Levels/Lvl_2_CH3.unity
     guid: e27c5e368d53f3f40b3d6089410cffd5
   - enabled: 1
-    path: Assets/Scenes/Chapter_3/Lvl_3-CH3-Intro.unity
-    guid: 692ac1b05b9ee86469b1f5f43476d621
+    path: Assets/Scenes/Chapter_3/Finish_Game.unity
+    guid: 9e080e3c253f43746bf775086c8ed984
   - enabled: 1
     path: Assets/Scenes/Chapter_3/Levels/Lvl_3_CH3.unity
     guid: c208d548d6c188e43a3639d271403d57
+  - enabled: 1
+    path: Assets/Scenes/Chapter_3/Lvl_3-CH3-Intro.unity
+    guid: c38668bf469e0c645ae95f7ac2f9011a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

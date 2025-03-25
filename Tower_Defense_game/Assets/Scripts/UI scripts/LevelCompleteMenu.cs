@@ -77,6 +77,13 @@ public class LevelComplete : MonoBehaviour
 
     }
 
+    public void Finish_Game()
+    {
+                
+        SceneManager.LoadScene("MainMenu");
+
+    }
+
     
 
 
