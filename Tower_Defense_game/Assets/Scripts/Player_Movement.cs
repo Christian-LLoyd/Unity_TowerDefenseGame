@@ -221,4 +221,18 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+
+    //taking the damage from enemy bullet
+   public void TakeDamage(int amount)
+    {
+        Debug.Log("Kapre took damage: " + amount);
+        Target_Castle tree = FindFirstObjectByType<Target_Castle>();
+        if (tree != null)
+        {
+            tree.Apply_Damage(amount);
+        }
+    }
+
+
+
 }

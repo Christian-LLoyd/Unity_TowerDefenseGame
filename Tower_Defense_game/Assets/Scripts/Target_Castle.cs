@@ -5,7 +5,7 @@ public class Target_Castle : MonoBehaviour
     public float Total_Health = 100f;
     public float Current_Health;
     private float _lastDamageTime;
-    public float DamageCooldown = 0.5f;
+    public float DamageCooldown = 0.2f;
 
     private HealthManager healthManager; // Reference to UI HealthManager
 
@@ -15,7 +15,7 @@ public class Target_Castle : MonoBehaviour
         _lastDamageTime = -DamageCooldown;
 
         // Find and assign HealthManager
-        healthManager = FindObjectOfType<HealthManager>();
+        healthManager = FindFirstObjectByType<HealthManager>();
         if (healthManager != null)
         {
             healthManager.SetHealth(Current_Health, Total_Health);

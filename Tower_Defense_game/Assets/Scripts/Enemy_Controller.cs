@@ -57,7 +57,7 @@ public abstract class Enemy_Controller : MonoBehaviour
         HandleAttack();
     }
 
-    void MoveTowardsTarget()
+    protected virtual void  MoveTowardsTarget()
     {
         if (target == null) return;
 
