@@ -7,7 +7,7 @@ public class BulletPool : MonoBehaviour
 
     [Header("Bullet Pool Settings")]
     [SerializeField] private GameObject bulletPrefab;
-    [SerializeField] private int poolSize = 80;
+    [SerializeField] private int poolSize = 150;
     [SerializeField] private bool allowPoolExpansion = true;
 
     private Queue<GameObject> bulletPool = new Queue<GameObject>();
