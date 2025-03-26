@@ -3844,6 +3844,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7858452629339253947, guid: 5c5fea7ee6821d84aa33f81f54168b6a, type: 3}
   m_PrefabInstance: {fileID: 321975379}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1669434648 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2758732857598290557, guid: 193e6277c584153439ef61872851f336, type: 3}
+  m_PrefabInstance: {fileID: 1452008053}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1672261954
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4009,7 +4014,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelCompleteScreen: {fileID: 902160091}
-  levelFailedScreen: {fileID: 0}
+  levelFailedScreen: {fileID: 1669434648}
 --- !u!1001 &1770613112
 PrefabInstance:
   m_ObjectHideFlags: 0
