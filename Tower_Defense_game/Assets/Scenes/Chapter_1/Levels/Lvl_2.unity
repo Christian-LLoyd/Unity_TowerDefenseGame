@@ -2719,6 +2719,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7077472914068684794, guid: 6192b7a82f71697478f4201c6c8439ca, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Next_Level_2
+      objectReference: {fileID: 0}
     - target: {fileID: 8388070607239410642, guid: 6192b7a82f71697478f4201c6c8439ca, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -4743,7 +4747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelCompleteScreen: {fileID: 44322206}
-  levelFailedScreen: {fileID: 0}
+  levelFailedScreen: {fileID: 1952042702}
 --- !u!114 &1691815426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5657,6 +5661,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 193e6277c584153439ef61872851f336, type: 3}
+--- !u!1 &1952042702 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2758732857598290557, guid: 193e6277c584153439ef61872851f336, type: 3}
+  m_PrefabInstance: {fileID: 1952042701}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1956019407 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5708831327691689443, guid: 833d97d6a1015d54299d0ad719f9599e, type: 3}
