@@ -69,6 +69,9 @@ public class BulletPool : MonoBehaviour
         if (bullet == null) return;
 
         bullet.SetActive(false);
+        bullet.transform.position = Vector3.zero;
+        bullet.transform.rotation = Quaternion.identity;
         bulletPool.Enqueue(bullet);
     }
+
 }

@@ -5,8 +5,8 @@ public class FlamethrowerEnemy : Enemy_Controller
     [Header("Ranged Attack Settings")]
     public GameObject enemyBulletPrefab;
     public Transform firePoint;
-    public float shootCooldown = 0.5f; //  fire rate
-    public float rangedStopDistance = 15f; //  shooting distance
+    public float shootCooldown = 0.5f;
+    public float rangedStopDistance = 15f;
 
     private float shootTimer = 0f;
 
@@ -14,21 +14,21 @@ public class FlamethrowerEnemy : Enemy_Controller
     {
         if (!LevelManager.instance.levelActive || target == null) return;
 
-        float distanceToTarget = Vector3.Distance(transform.position, target.position);
+        float distance = Vector3.Distance(transform.position, target.position);
 
-        if (distanceToTarget > rangedStopDistance)
+        if (distance > rangedStopDistance)
         {
-            // Too far — move toward the target
             MoveTowardsTarget();
             SetWalkingAnimation(true);
         }
         else
         {
-            // In firing range — stop and shoot
             rb.linearVelocity = Vector3.zero;
             SetWalkingAnimation(false);
 
-            transform.rotation = Quaternion.LookRotation((target.position - transform.position).normalized);
+            Vector3 direction = (target.position - transform.position);
+            direction.y = 0;
+            transform.rotation = Quaternion.LookRotation(direction.normalized);
 
             shootTimer -= Time.deltaTime;
             if (shootTimer <= 0f)
@@ -39,52 +39,43 @@ public class FlamethrowerEnemy : Enemy_Controller
         }
     }
 
-   private void ShootProjectile()
+    private void ShootProjectile()
     {
-        Debug.Log("🔥 Attempting to shoot...");
-
-        if (firePoint == null)
+        if (firePoint == null || BulletPool.Instance == null)
         {
-            Debug.LogError("❌ FirePoint is not assigned.");
+            Debug.LogError("❌ Missing firePoint or BulletPool instance.");
             return;
         }
 
-        if (BulletPool.Instance == null)
-        {
-            Debug.LogError("❌ BulletPool instance is missing in scene.");
-            return;
-        }
-
-        Vector3 playerDirection = (GetPlayerPosition() - firePoint.position);
-        playerDirection.y = 0; // Prevent aiming up/down
-        playerDirection.Normalize();
-
-        Quaternion bulletRotation = Quaternion.LookRotation(playerDirection);
+        Vector3 direction = GetPlayerPosition() - firePoint.position;
+        direction.y = 0;
+        direction.Normalize();
 
         GameObject bullet = BulletPool.Instance.GetBullet();
+        if (bullet == null)
+        {
+            Debug.LogWarning("⚠️ No bullet returned from pool.");
+            return;
+        }
+
         bullet.transform.position = firePoint.position;
-        bullet.transform.rotation = bulletRotation;
+        bullet.transform.rotation = Quaternion.LookRotation(direction);
 
         Enemy_Bullet bulletScript = bullet.GetComponent<Enemy_Bullet>();
         if (bulletScript != null)
         {
-            bulletScript.Initialize(playerDirection); // pass direction directly
+            bulletScript.Initialize(direction);
         }
 
-        Debug.Log("🔥 Flamethrower Enemy shot a pooled projectile!");
+        Debug.Log("🔥 Pooled bullet fired!");
     }
-
 
     private Vector3 GetPlayerPosition()
     {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        return player != null ? player.transform.position : firePoint.position + transform.forward * 5f;
+        return target != null ? target.position : firePoint.position + transform.forward * 5f;
     }
 
-    protected override void Attack()
-    {
-        // Not needed for ranged logic
-    }
+    protected override void Attack() { }
 
     protected override void SetWalkingAnimation(bool isWalking)
     {

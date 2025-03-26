@@ -54,8 +54,9 @@ public class Enemy_Bullet : MonoBehaviour
     }
 
     void OnEnable()
-{
-    Debug.Log("✅ Bullet enabled from pool!");
-}
+    {
+        currentLifetime = 0f; // to reuse the bullet pool
+        Debug.Log("✅ Bullet enabled from pool!");
+    }
 
 }
