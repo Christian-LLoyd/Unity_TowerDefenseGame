@@ -241,7 +241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefabs:
   - {fileID: 283634495}
-  - {fileID: 717092248}
+  - {fileID: 1040029571}
   spawnAreaSize: {x: 10, y: 10}
   spawnInterval: 5
   maxEnemies: 3
@@ -1423,9 +1423,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a753088f57619214e9ea4cd7322a8754, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Total_Health: 100
+  Total_Health: 300
   Current_Health: 0
-  DamageCooldown: 1.04
+  DamageCooldown: 0.2
 --- !u!114 &389062226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3843,7 +3843,7 @@ MonoBehaviour:
   enemyBulletPrefab: {fileID: 1767876787}
   firePoint: {fileID: 1092369996}
   shootCooldown: 0.1
-  rangedStopDistance: 15
+  rangedStopDistance: 20
 --- !u!95 &1040029573
 Animator:
   serializedVersion: 7
@@ -5734,8 +5734,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefabs:
-  - {fileID: 283634495}
   - {fileID: 717092248}
+  - {fileID: 1040029571}
   spawnAreaSize: {x: 10, y: 10}
   spawnInterval: 5
   maxEnemies: 3
@@ -5892,7 +5892,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefabs:
-  - {fileID: 283634495}
   - {fileID: 717092248}
   spawnAreaSize: {x: 10, y: 10}
   spawnInterval: 8
@@ -6135,7 +6134,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 1181259783}
   - {fileID: 1271576594}
-  - {fileID: 477772668}
   - {fileID: 1749055144}
   - {fileID: 1703790716}
   - {fileID: 1967704398}
@@ -6144,6 +6142,7 @@ SceneRoots:
   - {fileID: 827522152}
   - {fileID: 647813988}
   - {fileID: 421235267}
+  - {fileID: 477772668}
   - {fileID: 1959136038}
   - {fileID: 1771570157}
   - {fileID: 702182344}

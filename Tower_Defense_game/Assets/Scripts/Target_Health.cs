@@ -3,7 +3,7 @@ using UnityEngine;
 public class Target_Health : MonoBehaviour
 {
     [Header("Health Settings")]
-    public float totalHealth = 100f;
+    public float totalHealth = 300f;
     private float currentHealth;
 
     void Start()
