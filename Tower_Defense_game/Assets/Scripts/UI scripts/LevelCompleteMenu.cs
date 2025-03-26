@@ -14,6 +14,13 @@ public class LevelComplete : MonoBehaviour
         Time.timeScale = 0;
     }
 
+    public void level_1_restart()
+    {
+                
+        SceneManager.LoadScene("Lvl_1-Intro");
+
+    }
+
     public void Next_Level()
     {
                 
