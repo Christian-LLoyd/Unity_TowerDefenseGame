@@ -3,30 +3,28 @@ using UnityEngine;
 public class Enemy_Bullet : MonoBehaviour
 {
     public float speed = 4f;
-    public int damage = 10; // 💥 New: damage value
-
+    public int damage = 10;
+    public float lifetime = 5f;
+    
     private Vector3 direction;
-    private Transform playerTransform;
+    private float currentLifetime;
 
-    void Start()
+    // Updated to accept direction directly
+    public void Initialize(Vector3 fireDirection)
     {
-        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
-        if (playerObj != null)
-        {
-            playerTransform = playerObj.transform;
-            Vector3 flatTarget = new Vector3(playerTransform.position.x, transform.position.y, playerTransform.position.z);
-            direction = (flatTarget - transform.position).normalized;
-        }
-        else
-        {
-            Debug.LogWarning("Player not found by Enemy_Bullet!");
-            direction = Vector3.forward;
-        }
+        direction = fireDirection.normalized;
+        currentLifetime = 0f;
     }
 
     void Update()
     {
         transform.position += direction * speed * Time.deltaTime;
+        
+        currentLifetime += Time.deltaTime;
+        if (currentLifetime >= lifetime)
+        {
+            ReturnToPool();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -34,16 +32,30 @@ public class Enemy_Bullet : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             PlayerMovement player = other.GetComponent<PlayerMovement>();
-            if (player != null)
-            {
-                player.TakeDamage(damage); 
-            }
-
-            Destroy(gameObject);
+            if (player != null) player.TakeDamage(damage);
+            ReturnToPool();
         }
         else if (!other.CompareTag("Enemy") && !other.CompareTag("EnemyBullet"))
+        {
+            ReturnToPool();
+        }
+    }
+
+    private void ReturnToPool()
+    {
+        if (BulletPool.Instance != null)
+        {
+            BulletPool.Instance.ReturnBullet(gameObject);
+        }
+        else
         {
             Destroy(gameObject);
         }
     }
+
+    void OnEnable()
+{
+    Debug.Log("✅ Bullet enabled from pool!");
+}
+
 }
