@@ -3472,6 +3472,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 193e6277c584153439ef61872851f336, type: 3}
+--- !u!1 &1452008054 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2758732857598290557, guid: 193e6277c584153439ef61872851f336, type: 3}
+  m_PrefabInstance: {fileID: 1452008053}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1457028178
 GameObject:
   m_ObjectHideFlags: 0
@@ -4009,7 +4014,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelCompleteScreen: {fileID: 902160091}
-  levelFailedScreen: {fileID: 0}
+  levelFailedScreen: {fileID: 1452008054}
 --- !u!1001 &1770613112
 PrefabInstance:
   m_ObjectHideFlags: 0
