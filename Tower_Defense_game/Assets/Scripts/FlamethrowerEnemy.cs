@@ -5,8 +5,8 @@ public class FlamethrowerEnemy : Enemy_Controller
     [Header("Ranged Attack Settings")]
     public GameObject enemyBulletPrefab;
     public Transform firePoint;
-    public float shootCooldown = 0.3f; // Independent fire rate
-    public float rangedStopDistance = 10f; // Ideal shooting distance
+    public float shootCooldown = 0.5f; //  fire rate
+    public float rangedStopDistance = 15f; //  shooting distance
 
     private float shootTimer = 0f;
 

@@ -241,6 +241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefabs:
   - {fileID: 283634495}
+  - {fileID: 717092248}
   spawnAreaSize: {x: 10, y: 10}
   spawnInterval: 5
   maxEnemies: 3
@@ -2090,8 +2091,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefabs:
   - {fileID: 283634495}
+  - {fileID: 717092248}
   spawnAreaSize: {x: 10, y: 10}
-  spawnInterval: 10.12
+  spawnInterval: 8
   maxEnemies: 3
   minPlayerDistance: 3
   spawnBlockingLayers:
@@ -4461,9 +4463,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefabs:
   - {fileID: 283634495}
+  - {fileID: 717092248}
   spawnAreaSize: {x: 10, y: 10}
   spawnInterval: 6
-  maxEnemies: 5
+  maxEnemies: 3
   minPlayerDistance: 3
   spawnBlockingLayers:
     serializedVersion: 2
@@ -5732,6 +5735,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefabs:
   - {fileID: 283634495}
+  - {fileID: 717092248}
   spawnAreaSize: {x: 10, y: 10}
   spawnInterval: 5
   maxEnemies: 3
@@ -5889,6 +5893,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefabs:
   - {fileID: 283634495}
+  - {fileID: 717092248}
   spawnAreaSize: {x: 10, y: 10}
   spawnInterval: 8
   maxEnemies: 3
