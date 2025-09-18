@@ -4,7 +4,13 @@ Eco Defender is a top-down roguelike defense game built in Unity 3D, where playe
 
 🌍 Story & Theme
 
-The world is under siege by the relentless forces of deforestation, water pollution, and air pollution. As the Kapre, an ancient guardian of nature, you must use your mystical abilities to defend the Sacred Tree—a source of life and balance. With each wave of destruction, your resolve will be tested. Will you stand strong against the forces that threaten the environment, or will nature succumb to ruin?
+In a world teetering on the brink of ecological collapse, deforestation, polluted waters, and toxic air threaten the last remaining sanctuary of life, the Sacred Tree. From deep within the forest, a forgotten guardian awakens.
+
+You are the Kapre, a mythical protector of the land, summoned once more to defend nature’s final stronghold. As waves of destruction close in, your ancient powers must rise to meet them. Channel the strength of the earth, the wind, and the spirit of the forest to repel the forces of ruin.
+
+This is not just a battle, it’s a stand against extinction.
+
+Will you protect the Sacred Tree, or witness the fall of the last green hope?
 
 🎮 Gameplay Features
 
