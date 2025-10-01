@@ -1,4 +1,4 @@
-#Eco Defender 🌱🛡️
+# Eco Defender 🌱🛡️
 
 Eco Defender is a top-down roguelike defense game built in Unity 3D, where players take on the role of a Kapre, a guardian spirit from Philippine mythology, to protect the ecosystem from destruction.
 
@@ -12,7 +12,7 @@ This is not just a battle, it’s a stand against extinction.
 
 Will you protect the Sacred Tree, or witness the fall of the last green hope?
 
-#🎮 Gameplay Features
+# 🎮 Gameplay Features
 
 Defend the Ecosystem – Face off against waves of enemies that represent different environmental threats.
 
