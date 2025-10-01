@@ -28,7 +28,7 @@ Skill-Based Combat – Dodge, attack, and use abilities strategically to survive
 
 Environmental Effects – Watch as pollution physically alters the game world and strategize to reverse its effects.
 
-🛠️ Technologies Used
+# 🛠️ Technologies Used
 
 Unity 3D – Game Engine
 
